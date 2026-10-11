@@ -1,0 +1,30 @@
+indicator:
+  name: 'Community Connection: Ice Breakup in Three Alaskan Rivers'
+  slug: alaskan-rivers
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/alaskan-rivers/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-12/river-ice_td.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: alaskan_rivers_ice_breakup.csv
+  figure: Figure 1
+  figure_title: Figure 1. Ice Breakup Dates for Three Alaskan Rivers, 1896-2024
+  source_file: river-ice_fig-1_0.csv
+  source_sha256: cdd7fa3732bac5b2f6e1d5939765150ac9ee495eb6166d92d6e98297f55eef7b
+  source_encoding: UTF-8
+  data_source: National Snow and Ice Data Center, 2024; Yukon River Breakup, 2024;
+    Kuskokwim Ice Classic, 2024; National Weather Service, 2024.
+  web_update: December 2024
+  unit: Days from January 1
+  rows: 338
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year of the ice breakup.
+  - name: river
+    type: string
+    description: 'River and location: Yukon River (Dawson City), Tanana River (Nenana),
+      or Kuskokwim River (Bethel).'
+  - name: value
+    type: number
+    description: Ice breakup date as days from January 1, nine-year moving average.
